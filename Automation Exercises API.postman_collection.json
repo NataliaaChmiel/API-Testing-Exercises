@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "7f5706bd-f6a9-4ec1-a7fe-52fe08a655be",
+		"name": "Automation Exercises API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30213353"
+	},
+	"item": [
+		{
+			"name": "API 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search_product",
+							"value": "top",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct\n",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nataliaaa.ch19@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 9",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "invalid@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "invalid",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 11",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Natalia",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "examplePassword",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Miss",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "October",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Natalia",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Chmiel",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "companyExample",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "address1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "address2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Poland",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "00-000",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "stateExample",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "cityExample",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "012345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount\n",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 12",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nataliaaa.ch19@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/deleteAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"deleteAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API 13",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Natalia",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "examplePassword",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Miss",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "October",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Natalia",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Chmiel",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "companyExample",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "address1",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "address2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Poland",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "00-000",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "stateExample",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "cityExample",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "012345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/updateAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"updateAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
